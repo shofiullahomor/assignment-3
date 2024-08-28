@@ -19,35 +19,7 @@
 <!-- nav bar -->
 <div class="navbar bg-base-100 container mx-auto">
     <div class="flex-grow">
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
-        </div>
-        <ul
-          tabindex="0"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li><a>Item 1</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </li>
-          <li><a>Item 3</a></li>
-        </ul>
-      </div>
+      
       <img class="w-8 h-8 text-white bg-green-400  rounded-full" src="./assets/aarrow.png" alt="">
       <a class="btn btn-ghost text-xl">Renterio</a>
     </div>
@@ -63,14 +35,39 @@
       </ul>
     </div>
     <div class=" ">
-        <div class="flex gap-2 mx-2 ">
+        <div class="flex gap-2 mx-2 hidden lg:inline-flex">
         <img class="w-8 h-8 border rounded-full p-2 " src="./assets/search.png" alt="">
         <img class="w-8 h-8 border rounded-full p-2 " src="./assets/shopping.png" alt="">
     </div>
-        <div class="rounded-full bg-green-400 px-3 py-2  flex justify-end gap-2 ">
+        <div class="rounded-full bg-green-400 px-3 py-2  flex justify-end gap-2 hidden lg:inline-flex">
       <a class="font-extrabold">Book Consult</a>
       <img class="w-8 h-8 text-white bg-black rounded-full" src="./assets/arro.png" alt="">
     </div>
+    </div>
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto p-1 -ml-10 shadow">
+        <li><a>Home</a></li>
+        <li><a>Service</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Blogs</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
     </div>
   </div>
   <!-- navbar section end -->
@@ -79,8 +76,8 @@
     <div class="hero-content text-center max-w-5xl">
       <div class="">
         <img src="./assets/banner.png" alt="" class="mx-auto">
-        <h1 class="text-5xl font-bold max-w-4xl">A barn house of this design has a striking appearance</h1>
-        <p class="py-6">
+        <h1 class="text-xl lg:text-5xl font-bold max-w-4xl">A barn house of this design has a striking appearance</h1>
+        <p class="py-6 text-sm lg:text-base">
           The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
         </p>
         <button class="btn bg-green-300 rounded-full">View Details <img class="w-8 h-8 text-white bg-green-400  rounded-full" src="./assets/aarrow.png" alt=""></button>
@@ -89,13 +86,13 @@
   </div>
   <!-- banner section end -->
   <!-- About section start -->
-  <div class="flex  bg-slate-100 p-10 container mx-auto justify-between gap-2  ">
+  <div class=" flex flex-col lg:flex-row  bg-slate-100 lg:p-10 container   justify-center items-center lg:justify-between gap-2  ">
       <!-- text part -->
 
-      <div class="w-2/4 m-2 p-2">
-        <img class="mb-2" src="./assets/Vector.png" alt="" >
-        <button class="btn btn bg-white "><img class="w-4" src="./assets/arrowforward.png" alt="">About Us</button>
-        <h1 class="text-4xl font-bold py-2">We design thoughtful, liveable spaces</h1>
+      <div class=" w-11/12  lg:w-2/4 m-2 p-2 ">
+        <img class="mb-2 hidden lg:block" src="./assets/Vector.png" alt="" >
+        <button class="btn btn bg-white text-center "><img class="w-4 " src="./assets/arrowforward.png" alt="">About Us</button>
+        <h1 class="text-2xl lg:text-4xl font-bold py-2">We design thoughtful, liveable spaces</h1>
         <p class="py-2 my-2">The barn house captivates with its blend of rustic charm and 
           modern sophistication, featuring weathered wood, sleek metal accents.</p>
           <!-- card -->
@@ -154,7 +151,7 @@
         <h1 class="font-bold text-center text-4xl">Our Works Process</h1>
         <p class="text-center w-3/5 mx-auto mb-10">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
         <!-- card -->
-         <div class="flex gap-4">
+         <div class="flex flex-col lg:flex-row gap-4">
         <div class="card bg-rose-200 w-72 h-56 shadow-xl">
           <div class="card-body">
             <img class="w-12 h-12" src="./assets/concept.png" alt="">
@@ -205,11 +202,12 @@
           </div>
             <h1 class="font-bold text-center text-4xl">Our Latest Portfolio</h1>
             <p class="text-center w-3/5 mx-auto mb-10">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents..</p>
+            
             <!-- GRID SECTION START -->
-            <div class="grid grid-cols-12 grid-rows-2 gap-4">
-                <div class="flex w-full p-6 col-span-8 rounded-2xl border border-gray-100 items-center ">
+            <div class="grid  grid-cols-12  grid-rows-2 lg:gap-4 ">
+                <div class="flex flex-col lg:flex-row w-full p-6 col-span-12 lg:col-span-8  rounded-2xl border border-gray-100 items-center ">
                   <div class="w-full  ">
-                    <img class="w-64 h-44" src="./assets/img1.png" alt="">
+                    <img class="w-full h-full" src="./assets/img1.png" alt="">
                   </div>
                   <div class="ml-6">
                     <h1 class="font-bold text-2xl mb-2">Commercial</h1>
@@ -222,16 +220,16 @@
                     </div>
                   </div>
                 </div>
-                <div class="w-full col-span-4  rounded-2xl border border-gray-100 items-center ">
-                  <img class="w-full p-6" src="./assets/img2.png" alt="">
+                <div class=" w-full col-span-12 lg:col-span-4 p-4 rounded-2xl border border-gray-100 items-center ">
+                  <img class="w-full h-full lg:p-6" src="./assets/img2.png" alt="">
                 </div>
-                <div class="w-full col-span-2 rounded-2xl border border-gray-100 mt-6">
-                  <img class="w-full" src="./assets/img3.png" alt="">
+                <div class="w-full col-span-12 lg:col-span-2 rounded-2xl border mx-2 border-gray-100 mt-6">
+                  <img class="w-full h-full" src="./assets/img3.png" alt="">
                 </div>
-                <div class=" col-span-8 ">
-                  <div class="flex w-full p-6 col-span-8 rounded-2xl border border-gray-100 items-center ">
+                <div class=" col-span-12 lg:col-span-8 ">
+                  <div class="flex flex-col lg:flex-row w-full p-6 col-span-8 rounded-2xl border border-gray-100 items-center ">
                     <div class="w-full  ">
-                      <img class="w-64 h-44" src="./assets/img4.png" alt="">
+                      <img class="w-full h-full" src="./assets/img4.png" alt="">
                     </div>
                     <div class="ml-6">
                       <h1 class="font-bold text-2xl mb-2">Commercial</h1>
@@ -245,17 +243,109 @@
                     </div>
                   </div>
                 </div>
-                <div class=" w-full col-span-2 rounded-2xl border border-gray-100 mt-6">
-                  <img class="w-full " src="./assets/img5.png" alt="">
+                <div class=" w-full col-span-12 lg:col-span-2 rounded-2xl border border-gray-100 mt-6">
+                  <img class="w-full h-full " src="./assets/img5.png" alt="">
                 </div>
-                <div class="w-full bg-green-100">
-
-                </div>
+                
             </div>
         </div>
-
-        width: 326px;
-        height: 179.3px;
+        <!-- portfolio section end -->
+        <!--form section start -->
+        <div class="bg-cover bg-center py-20 " 
+         style="background-image: url('./assets/bg.jpg');">
+          <!-- Your content here -->
+          <div class="text-center mt-7 mb-2 ">
+            <button class="btn bg-lime-200 rounded-full font-bold "> <img class="w-8 h-8 text-white   rounded-full" src="./assets/arrowforward.png" alt="">Let's Connect</button>
+          </div>
+          <h1 class="font-bold text-center text-4xl">Let's Discuss Next Project</h1>
+            <p class="text-center w-3/5 mx-auto mb-10">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents..</p>
+          
+          
+        
+        
+    <div class="grid grid-cols-12 grid-rows-5 lg:grid-rows-4  justify-center items-center gap-4  ">
+      <div class="hidden lg:block col-span-2"></div>
+      <div class="w-full col-span-8 lg:col-span-4">
+        <input class="p-3  rounded-full w-full" type="text" name="" placeholder="First Name*" id="">
+      </div>
+      <div class="w-full  col-span-8 lg:col-span-4">
+        <input class="p-3 rounded-full  w-full" type="text" name="" placeholder="Last Name*" id="">
+      </div >
+      <div class=" w-full col-span-2"></div>
+      <div class=" w-full col-span-2"></div>
+      <div class=" w-full  col-span-8 lg:col-span-4">
+        <input class="p-3  rounded-full w-full" type="text" name="" placeholder="Phone Number*" id="">
+      </div>
+      
+      <div class="w-full  col-span-8 lg:col-span-4">
+        <input class="p-3 rounded-full w-full" type="text" name="" placeholder="Email Number*" id="">
+      </div>
+      <div class="w-full col-span-2"></div>
+      <div class="w-full col-span-2"></div>
+      <div class="w-full col-span-8 ">
+        <textarea class="w-full p-4 rounded-2xl " placeholder="write your message here" rows=""></textarea>
+      </div>
+      <div class="w-full col-span-2"></div>
+      <div class="w-full col-span-2"></div>
+      <div class="rounded-full w-full col-span-8 bg-lime-400 px-3 py-2  flex justify-center gap-2 ">
+        <a class="font-extrabold">Send Mail</a>
+        <img class="w-8 h-8 text-white bg-black rounded-full" src="./assets/arro.png" alt="">
+      </div>
+      <div class="w-full col-span-2"></div>
+    </div>
     
+  </div>
+  <!-- faq section -->
+   <div class="bg-white p-10 m-10">
+    <h1 class="text-4xl text-center m-6">FAQ SECTION</h1>
+    <div tabindex="0" class="collapse collapse-plus border-base-300 bg-white border">
+      <div class="collapse-title text-xl font-medium">Who are you?</div>
+      <div class="collapse-content">
+        <p>We are a interior company</p>
+      </div>
+    </div>
+    <div tabindex="0" class="collapse collapse-plus border-base-300 bg-white border">
+      <div class="collapse-title text-xl font-medium">Do we start a project any time?</div>
+      <div class="collapse-content">
+        <p>Yes, you can do</p>
+      </div>
+    </div>
+    <div tabindex="0" class="collapse collapse-plus border-base-300 bg-white border">
+      <div class="collapse-title text-xl font-medium">How do you work?</div>
+      <div class="collapse-content">
+        <p>We are a interior company</p>
+      </div>
+    </div>
+    <div tabindex="0" class="collapse collapse-plus border-base-300 bg-white border">
+      <div class="collapse-title text-xl font-medium">How much time do you need?</div>
+      <div class="collapse-content">
+        <p>We are a interior company</p>
+      </div>
+    </div>
+   </div>
+  <!-- footer section start -->
+  <footer class="footer footer-center bg-black text-base-content rounded p-10">
+    <div class="flex">
+      <div>
+        <img class="w-6 h-6 rounded-full bg-lime-400" src="./assets/arrow.png" alt="">
+      </div>
+      <div><h1 class="font-bold text-2xl text-white">Renterio</h1></div>
+    </div>
+    <p class="text-center text-gray w-96">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+    <nav class="grid grid-cols-1 gap-4 lg:grid-flow-col text-white  lg:gap-10">
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Services</a>
+      <a class="link link-hover">Portfolio</a>
+      <a class="link link-hover">Blogs</a>
+      <a class="link link-hover">Contact Us</a>
+    </nav>
+    
+    <aside>
+      <div class="rounded-full bg-green-400 px-3 py-2  flex justify-end gap-2 ">
+        <a class="font-extrabold">Book Consult</a>
+        <img class="w-8 h-8 text-white bg-black rounded-full" src="./assets/arro.png" alt="">
+      </div>
+    </aside>
+  </footer>
 </body>
 </html>
